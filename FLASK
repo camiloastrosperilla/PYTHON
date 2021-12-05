@@ -1,0 +1,30 @@
+FLASK_INSTALLATION
+  STEP_1:
+    $sudo yum install python-virtualenv
+  STEP_2:
+    $mkdir project_flask //Separete directory to flask.
+    $cd project_flask.
+  STEP_3:
+    //create de Virutal Environment into project_flask.
+    $python3 -m venv <name_of_environment>
+  STEP_4:
+    //Activate the Environment.
+    $. /<name_of_environment>/bin/activate
+  STEP_5:
+    //Install FLASK but pefore updgrade pip at the last version.
+    $python3 -m pip install --upgrade pip
+    $pip install Flask
+   STEP_6:
+     //Test the Development Environment
+     //save file and close.
+     from flask import Flask
+     app = Flask(__name__)
+     @app.route('/')
+     def hello_world():
+        return 'Hello world!'
+   STEP_7:
+     //Navigate to the project_folder.
+     $export FLASK_APP=file_name.py  
+     $flask run
+     
+     
