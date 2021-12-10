@@ -11,7 +11,7 @@ FLASK_INSTALLATION
     //Activate the Environment.
     $. /<name_of_environment>/bin/activate
   STEP_5:
-    //Install FLASK but pefore updgrade pip at the last version.
+    //Install FLASK but before updgrade pip at the last version.
     $python3 -m pip install --upgrade pip
     $pip install Flask
    STEP_6:
